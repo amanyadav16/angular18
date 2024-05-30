@@ -6,17 +6,8 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ReactiveFormsModule, AsyncPipe, JsonPipe],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    address: new FormGroup({
-      city: new FormControl(''),
-      state: new FormControl(''),
-    }),
-  });
-}
+export class AppComponent {}

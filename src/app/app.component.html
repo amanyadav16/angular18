@@ -1,16 +1,1 @@
-<form [formGroup]="profileForm">
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" formControlName="firstName" />
 
-  <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName" formControlName="lastName" />
-
-  <div formGroupName="address">
-    <label for="city">City:</label>
-    <input type="text" id="city" formControlName="city" />
-
-    <label for="state">State:</label>
-    <input type="text" id="state" formControlName="state" />
-  </div>
-</form>
-<pre>{{ profileForm.valueChanges | async | json }}</pre>

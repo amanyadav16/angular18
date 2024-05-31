@@ -1,12 +1,11 @@
-import { AsyncPipe, JsonPipe } from '@angular/common';
-import { Component, signal } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TodosListComponent } from './todos-list/todos-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, TodosListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

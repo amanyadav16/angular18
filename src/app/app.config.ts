@@ -6,10 +6,10 @@ import {
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { TodoService } from './todo.service';
+import { TodoService } from './services/todo.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { provideHttpClient } from '@angular/common/http';
-import { InMemoryTodoService } from './in-memory-todo.service';
+import { InMemoryTodoService } from './services/in-memory-todo.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [

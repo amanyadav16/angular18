@@ -9,10 +9,10 @@ export class InMemoryTodoService implements InMemoryDbService {
 
   createDb() {
     let todos = [
-      { id: 1, name: 'Windstorm' },
-      { id: 2, name: 'Bombasto' },
-      { id: 3, name: 'Magneta' },
-      { id: 4, name: 'Tornado' },
+      { id: 1, task: 'Windstorm', completed: false },
+      { id: 2, task: 'Bombasto', completed: true },
+      { id: 3, task: 'Magneta', completed: false },
+      { id: 4, task: 'Tornado', completed: false },
     ];
     return { todos };
   }
